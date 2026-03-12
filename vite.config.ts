@@ -5,6 +5,17 @@ import {defineConfig} from 'vite';
 export default defineConfig(() => {
   return {
     plugins: [tailwindcss()],
+    build: {
+      rollupOptions: {
+        input: {
+          main: path.resolve(__dirname, 'index.html'),
+          about: path.resolve(__dirname, 'about.html'),
+          contact: path.resolve(__dirname, 'contact.html'),
+          plant: path.resolve(__dirname, 'plant.html'),
+          products: path.resolve(__dirname, 'products.html'),
+        },
+      },
+    },
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
