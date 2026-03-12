@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | L&N Farms</title>
+    <link rel="stylesheet" href="/src/index.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="bg-primary-green py-4 px-6 sticky top-0 z-50 shadow-md">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <a href="index.html" class="text-white text-2xl font-bold flex items-center gap-2">
+          <span class="text-tropical-yellow">L&N</span> Farms
+        </a>
+        <div class="hidden md:flex gap-8">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About the Farm</a>
+          <a href="plant.html" class="nav-link">The Soursop Plant</a>
+          <a href="products.html" class="nav-link">Products</a>
+          <a href="contact.html" class="nav-link text-tropical-yellow">Contact</a>
+        </div>
+        <button class="md:hidden text-white">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="bg-primary-green py-20 px-6 text-center text-white">
+      <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Contact Us</h1>
+      <p class="text-xl opacity-90 max-w-2xl mx-auto">Have questions or want to place an order? Get in touch with us.</p>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="section-padding grid md:grid-cols-2 gap-12">
+      <!-- Contact Info -->
+      <div>
+        <h2 class="text-3xl mb-8">Get in Touch</h2>
+        <div class="space-y-6">
+          <div class="flex items-start gap-4">
+            <div class="bg-tropical-yellow p-3 rounded-full text-primary-green">
+              <i data-lucide="map-pin"></i>
+            </div>
+            <div>
+              <h4 class="text-xl font-bold mb-1">Location</h4>
+              <p class="text-gray-600">Bulu Blind Center Road, Buea, South-West Region, Cameroon</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start gap-4">
+            <div class="bg-tropical-yellow p-3 rounded-full text-primary-green">
+              <i data-lucide="phone"></i>
+            </div>
+            <div>
+              <h4 class="text-xl font-bold mb-1">Phone</h4>
+              <p class="text-gray-600">(+237) 677608073 / 697354339</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start gap-4">
+            <div class="bg-tropical-yellow p-3 rounded-full text-primary-green">
+              <i data-lucide="message-circle"></i>
+            </div>
+            <div>
+              <h4 class="text-xl font-bold mb-1">WhatsApp</h4>
+              <p class="text-gray-600">(+237) 677608073 / 697354339</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start gap-4">
+            <div class="bg-tropical-yellow p-3 rounded-full text-primary-green">
+              <i data-lucide="mail"></i>
+            </div>
+            <div>
+              <h4 class="text-xl font-bold mb-1">Email</h4>
+              <p class="text-gray-600">abonkwechinje@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 p-8 bg-light-gray rounded-3xl">
+          <h3 class="text-2xl mb-4">Farm Name</h3>
+          <p class="text-xl font-bold text-primary-green">L&N Farms</p>
+          <p class="mt-4 text-gray-600 italic">"Dedicated to natural farming and quality fruit."</p>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="bg-white p-8 rounded-3xl shadow-xl border border-black/5">
+        <h2 class="text-3xl mb-8">Send a Message</h2>
+        
+        <div id="success-message" class="hidden bg-leaf-green/10 border border-leaf-green text-primary-green px-6 py-4 rounded-2xl mb-8 flex items-center gap-3">
+          <i data-lucide="check-circle" class="text-leaf-green"></i>
+          <p class="font-medium">Thank you! Your message has been sent successfully.</p>
+        </div>
+
+        <form id="contact-form" class="space-y-6">
+          <div>
+            <label class="block text-sm font-bold mb-2 text-primary-green uppercase tracking-wider">Name</label>
+            <input type="text" required placeholder="Your Name" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary-green focus:ring-2 focus:ring-primary-green/20 outline-none transition-all">
+          </div>
+          <div>
+            <label class="block text-sm font-bold mb-2 text-primary-green uppercase tracking-wider">Email</label>
+            <input type="email" required placeholder="Your Email" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary-green focus:ring-2 focus:ring-primary-green/20 outline-none transition-all">
+          </div>
+          <div>
+            <label class="block text-sm font-bold mb-2 text-primary-green uppercase tracking-wider">Message</label>
+            <textarea rows="5" required placeholder="Your Message" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary-green focus:ring-2 focus:ring-primary-green/20 outline-none transition-all"></textarea>
+          </div>
+          <button type="submit" class="w-full btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-green text-white py-12 px-6">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-12">
+        <div>
+          <h3 class="text-white text-xl mb-4">L&N Farms</h3>
+          <p class="opacity-80">Premium organic soursop farm in Buea, South-West Region, Cameroon.</p>
+        </div>
+        <div>
+          <h3 class="text-white text-xl mb-4">Quick Links</h3>
+          <ul class="space-y-2 opacity-80">
+            <li><a href="index.html" class="hover:text-tropical-yellow">Home</a></li>
+            <li><a href="about.html" class="hover:text-tropical-yellow">About the Farm</a></li>
+            <li><a href="plant.html" class="hover:text-tropical-yellow">The Soursop Plant</a></li>
+            <li><a href="products.html" class="hover:text-tropical-yellow">Products</a></li>
+            <li><a href="contact.html" class="hover:text-tropical-yellow">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-white text-xl mb-4">Contact Us</h3>
+          <p class="opacity-80 mb-2">Bulu Blind Center Road, Buea, South-West Region, Cameroon</p>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-white/10 text-center opacity-60 text-sm">
+        <p>&copy; 2026 L&N Farms. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      lucide.createIcons();
+
+      const form = document.getElementById('contact-form');
+      const successMessage = document.getElementById('success-message');
+
+      if (form) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          const button = form.querySelector('button');
+          const originalText = button.innerText;
+          
+          // Visual feedback
+          button.innerText = 'Sending...';
+          button.disabled = true;
+          button.style.opacity = '0.7';
+          button.style.cursor = 'not-allowed';
+
+          // Simulate API call delay
+          setTimeout(() => {
+            form.reset();
+            button.innerText = originalText;
+            button.disabled = false;
+            button.style.opacity = '1';
+            button.style.cursor = 'pointer';
+            
+            // Show success message
+            successMessage.classList.remove('hidden');
+            
+            // Scroll to message
+            successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+            // Hide after 6 seconds
+            setTimeout(() => {
+              successMessage.classList.add('hidden');
+            }, 6000);
+          }, 1500);
+        });
+      }
+    </script>
+  </body>
+</html>
